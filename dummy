@@ -1,0 +1,6 @@
+Using Rest API
+1. List all buckets in a project
+Get https://www.googleapis.com/storage/v1/b?project=<ProjectName>
+2. Check the IAM Policy for each bucket
+GET https://www.googleapis.com/storage/v1/b/<bucketName>/iam
+No role should contain allUsers and/or allAuthenticatedUsers as a member.
