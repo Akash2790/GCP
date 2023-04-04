@@ -1,1 +1,67 @@
 https://docs.google.com/document/d/1J9yD-QsZ_kvmaLf5-DdpSrh6Spl2iggtamzJqNDdzS4/edit
+
+---------------------------------------------------------------------------------------------------
+
+                                  GCA PDE Program - Week 1 links  
+
+Note: Resources that require a Partner Advantage logon are indicated with an asterix (*)
+
+Google Professional Data Engineer Exam Guide
+https://cloud.google.com/certification/guides/data-engineer
+
+GCA PDE Learning Journey https://events.withgoogle.com/google-cloud-academy-on-boarding-1/pde/#content
+
+Partner Advantage Home Page (can self-register from this page)
+https://www.partneradvantage.goog/GCPPRM/s/partneradvantageportallogin?language=en_US
+
+
+Partner Advantage Getting Started
+https://support.google.com/googlecloud/topic/9198654#zippy=
+
+Building the data engineering driven organization from the first principles (Sep 23, 2021)
+https://cloud.google.com/blog/products/data-analytics/building-the-data-engineering-driven-organization
+
+What type of data processing organization are you? (September 2021)
+https://services.google.com/fh/files/misc/dataprocessingorganisationwhitepaper.pdf
+
+The Cloud Girl - Analytics 
+https://thecloudgirl.dev/analytics.html
+
+Storage at Google Cloud (*)
+https://docs.google.com/presentation/d/1O0iNTcKfIrH_YGKgH6IvU3HXipLozj-mzevTkwPBTko/edit#slide=id.ge72c3ad7fc_0_413
+
+Data Platform Foundations (*)
+https://docs.google.com/presentation/d/1uwhPTNWuAw4oebRHJa-paG-GnDZRPR5Kw4Q1lXScs1o/edit#slide=id.g8ce9397fe4_2_892
+
+Cloud Security Kickoff (*)
+https://docs.google.com/presentation/d/1udmlxxBHTH21RPenr82clh3L5PRO34-X5C3hETmN7yw/edit?resourcekey=0-6J5bplovCwo68utGwsWJ0w#slide=id.ge53324d90e_3_963
+
+The Cloud Girl - Cloud Storage
+https://thecloudgirl.dev/CloudStorage.html
+
+Introduction to Data Lake Modernization (*)
+https://docs.google.com/document/d/1SqOWYAWbh37xe5UexGX1vxbSybikghWNU7eX-T4D1SQ/edit?resourcekey=0-ocmlAR4jXprY91vlRV2ulA#heading=h.fovgfotqf6zc
+
+Architect your data lake on Google Cloud with Data Fusion and Composer (Feb 19, 2021) 
+https://cloud.google.com/blog/topics/developers-practitioners/architect-your-data-lake-google-cloud-data-fusion-and-composer
+
+Cloud Storage as a data lake
+https://cloud.google.com/architecture/build-a-data-lake-on-gcp
+Build a modern, unified analytics data platform with Google Cloud (Aug 2021)
+https://services.google.com/fh/files/misc/googlecloud_unified_analytics_data_platform_paper_2021.pdf
+
+Modernizing data platforms with BigQuery (*)
+https://docs.google.com/presentation/d/1J90_m0lVPWdGDs5k5ZRfcvTKewVdqNoe4D9cGM01rH0/edit#slide=id.g114c975821c_0_235
+
+Open data lakehouse on Google Cloud
+https://cloud.google.com/blog/products/data-analytics/open-data-lakehouse-on-google-cloud
+
+Build a data mesh
+https://cloud.google.com/dataplex/docs/build-a-data-mesh
+
+Introducing Google Cloud Dataplex
+https://cloud.google.com/blog/products/data-analytics/introducing-google-cloud-dataplex
+
+Recommended lab for those new to Qwiklabs is 
+A Tour of Google Cloud Hands-on Labs (search for it by name in the Catalog)
+
