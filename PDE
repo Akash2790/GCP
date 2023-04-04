@@ -1,0 +1,129 @@
+https://docs.google.com/document/d/1J9yD-QsZ_kvmaLf5-DdpSrh6Spl2iggtamzJqNDdzS4/edit
+
+Basics
+
+What is Shell?
+
+Why is a shell script needed?
+
+Write some advantages of shell scripting.
+
+Write some limitations of shell scripting.
+
+Name the file in which shell programs are stored.
+
+Name different types of shells available.
+
+Write difference between Bourne Shell and C Shell.
+
+What do you mean by Shell variable?
+
+What are different types of variables mostly used in shell scripting?
+
+Explain the term positional parameters.
+
+What are control instructions?
+
+How many types of control instructions are available in a shell?
+
+What do you mean by GUI Scripting?
+
+What is the shebang line in shell scripting?
+
+What is a file system? Write down the four core components of a Linux file system.
+
+What is a shell script and why is it used?
+
+How do you create a shell script?
+
+What is the #! (shebang) used for in a shell script?
+
+How do you include comments in a shell script?
+
+How do you run a shell script?
+
+How do you perform input and output redirection in a shell script?
+
+What are some common shell script commands?
+
+What are some common shell environments?
+
+How do you use command line arguments and options in a shell script?
+
+How do you use loops (e.g., for, while) in a shell script?
+
+When should shell programming/scripting not be used?
+
+What are the default permissions of a file when it is created?
+
+How can a variable be made to be unchangeable?
+
+What are some of Shell Scripting's drawbacks?
+
+Explain the way you can connect to a database server.
+
+What is the importance of $#?
+
+Write the command that is used to execute a shell file.
+
+Name the command that can be used to find out the number of arguments passed to the script?
+
+How long does a variable in a shell script last?
+
+What is the use of the "$?" command?
+
+What is the best way to run a script in the background?
+
+Advance
+
+What do you mean by crontab and name two files of crontab command.
+
+Which command can be used to take the backup.
+
+Name the command that is used to compare the strings in a shell script.
+
+Write the difference between $* and $@
+
+List all supported types of loops in bash.
+
+What does interactive and non-interactive shells means?
+
+How pass and access arguments are passed in a script?
+
+"s" permission bit in a file means?
+
+Detail all the debug processes in the shell script and explain the best way
+
+What are metacharacters?
+
+Write the difference between “=” and “==”.
+
+Name the command that is used to display the shell's environment variable.
+
+How do you use shell scripts to manage and manipulate files and directories?
+
+How will you find total shells available in your system?
+
+Explain how you will open a read-only file in Unix/Shell.
+
+Name the command that one should use to know how long the system has been running.
+
+Write the difference between $$ and $!?
+
+Write difference between grep and find command.
+
+How can we create a function in shell script?
+
+How do you optimize the performance of a shell script?
+
+How do you use shell scripts to manipulate and manage processes, such as by killing, starting, or stopping them?
+
+How do you use shell scripts to interact with APIs or other external services?
+
+How you will check if a file exists on the filesystem.
+
+What is the difference between [[ $string == "efg" ]] and [[ $string == efg ]]
+
+Find the number of lines in a file that contains the letter "LINUX."
+
+Explain in details Zombie Processes in shell scripting?
