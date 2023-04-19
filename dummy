@@ -33,8 +33,10 @@ for bucket in buckets_data.get("items", []):
         print(f"Bucket {bucket_name} is not publicly accessible.")
         
         
--------------------------------------------------------------------------------------------------------------------------
 
+        
+-------------------------------------------------------------------------------------------------------------------------
+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
 To use this script, replace <ProjectName> with the name of your project, and <Access-Token> with a valid access token that has the necessary permissions to access the Google Cloud Storage API. The script then uses the REST API to list all the buckets in the project, and for each bucket, it checks its IAM policy to ensure that it does not contain allUsers or allAuthenticatedUsers as a member. If a bucket is found to be publicly accessible, the script prints a message indicating that it has public or anonymous access, otherwise it prints a message indicating that it is not publicly accessible.
 
 Note that to use the Google Cloud Storage REST API, you need to have the necessary permissions and credentials set up. You can find more information about the authentication and authorization requirements for the REST API in the Google Cloud Storage API documentation.
