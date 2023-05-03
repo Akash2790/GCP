@@ -75,3 +75,24 @@ def check_cloud_dns_logging(project_id):
             # Implement code to enable logging for the network
         else:
             print(f"DNS logging is enabled for {network_name}.")
+
+
+
+#----------------------------------------------------
+def check_instances_for_external_ip(project_id):
+    # Run the 'gcloud compute instances list' command and capture the output as a byte string
+    instances_output = subprocess.check_output(['gcloud', 'compute', 'instances', 'list', '--format=json', f'--project={project_id}'])
+    
+    # Load the JSON-formatted output into a list of dictionaries
+    instances = json.loads(instances_output)
+
+    # Check whether each instance has an external IP address configured
+    for instance in instances:
+        for interface in instance['networkInterfaces']:
+            if 'accessConfigs' in interface:
+                print(f"Instance {instance['name']} has an external IP address configured.")
+                break
+        else:
+            print(f"Instance {instance['name']} does not have an external IP address configured.")
+
+check_instances_for_external_ip("innate-portal-377406")
