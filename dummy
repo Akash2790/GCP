@@ -40,3 +40,38 @@ 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
 To use this script, replace <ProjectName> with the name of your project, and <Access-Token> with a valid access token that has the necessary permissions to access the Google Cloud Storage API. The script then uses the REST API to list all the buckets in the project, and for each bucket, it checks its IAM policy to ensure that it does not contain allUsers or allAuthenticatedUsers as a member. If a bucket is found to be publicly accessible, the script prints a message indicating that it has public or anonymous access, otherwise it prints a message indicating that it is not publicly accessible.
 
 Note that to use the Google Cloud Storage REST API, you need to have the necessary permissions and credentials set up. You can find more information about the authentication and authorization requirements for the REST API in the Google Cloud Storage API documentation.
+
+
+#-----------------------------------------------------------------------
+
+
+from google.cloud import dns
+
+def check_cloud_dns_logging(project_id):
+    client = dns.DnsServiceClient()
+
+    # List all VPC networks in the project
+    networks = client.list_networks(project=f"projects/{project_id}")
+
+    for network in networks:
+        # Get the VPC network name
+        network_name = network.name.split("/")[-1]
+
+        # Get the Cloud DNS logging configuration for the network
+        try:
+            response = client.get_dns_logging_config(
+                request={
+                    "name": f"projects/{project_id}/global/networks/{network_name}"
+                }
+            )
+            logging_enabled = response.log_config.enable_log_delivery
+        except Exception as e:
+            print(f"Error getting DNS logging config for {network_name}: {e}")
+            continue
+
+        # Check if logging is enabled for the network
+        if not logging_enabled:
+            print(f"DNS logging is not enabled for {network_name}!")
+            # Implement code to enable logging for the network
+        else:
+            print(f"DNS logging is enabled for {network_name}.")
