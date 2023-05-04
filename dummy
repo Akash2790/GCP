@@ -96,3 +96,23 @@ def check_instances_for_external_ip(project_id):
             print(f"Instance {instance['name']} does not have an external IP address configured.")
 
 check_instances_for_external_ip("innate-portal-377406")
+
+#______________________________________________________________________________________
+
+import subprocess
+
+def ensure_dns_logging_enabled(project_id):
+    # Get a list of all VPC networks in the project
+    cmd = f"gcloud compute networks list --project {project_id} --format='value(name)'"
+    vpc_networks = subprocess.check_output(cmd, shell=True, text=True).strip().split('\n')
+    
+    # For each VPC network, check if it is associated with a DNS policy with logging enabled
+    for network in vpc_networks:
+        cmd = f"gcloud dns policies list --project {project_id} --filter='networks.networkUrl.basename()={network}' --format='value(enableLogging)'"
+        logging_enabled = subprocess.check_output(cmd, shell=True, text=True).strip()
+        
+        # If logging is not enabled for the VPC network, enable it
+        if logging_enabled.lower() != 'true':
+            cmd = f"gcloud dns policies update --project {project_id} --network {network} --enable-logging"
+            subprocess.check_call(cmd, shell=True)
+            print(f"Enabled DNS logging for VPC network {network}")
