@@ -116,3 +116,42 @@ def ensure_dns_logging_enabled(project_id):
             cmd = f"gcloud dns policies update --project {project_id} --network {network} --enable-logging"
             subprocess.check_call(cmd, shell=True)
             print(f"Enabled DNS logging for VPC network {network}")
+            
+            
+ #----------------------------------------------------------------------------------------
+ #Explain
+ def is_instance_using_default_service_account():
+    project_id = get_project_id()
+    proj_num = get_project_num(project_id)
+    expected_servicekey = f"{proj_num}-compute@developer.gserviceaccount.com"
+    print(expected_servicekey)
+    instance_client = compute.InstancesClient()
+    request = compute.AggregatedListInstancesRequest()
+    request.project = project_id
+    # Use the `max_results` parameter to limit the number of results that
+    # the API returns per response page.
+    request.max_results = 50
+
+    agg_list = instance_client.aggregated_list(request=request)
+
+    all_instances = defaultdict(list)
+    print("Instances found:")
+    result = {}
+    # Despite using the `max_results` parameter, you don't need to handle the
+    # pagination yourself. The returned `AggregatedListPager` object handles
+    # pagination automatically, returning separated pages as you iterate over
+    # the results.
+
+    for zone, response in agg_list:
+        if response.instances
+            all_instances[zone].extend(response.instances)
+            # print(f" {zone}:")
+            for instance in response.instances:
+                for sa in (instance.service_accounts):
+                    flg = True if expected_servicekey == sa.email else False
+                    result[instance.id] = flg
+                    if flg:
+                        break
+                # print(f" - {instance.name} ({instance.machine_type})")
+    print("*"*20)
+    return result
