@@ -1,0 +1,89 @@
+What is PEP 8? 
+
+What are the suggestions regarding imports in PEP 8? 
+
+What is the recommendation of PEP 8 regarding indentation ? 
+
+What is the recommendation of PEP 8 regarding indentation method? 
+
+What is the recommendation of PEP 8 regarding maximum code line characters ? 
+
+What is the recommendation of PEP 8 regarding the flowing long blocks of text with fewer structural restrictions (docstrings or comments)? 
+
+What is the recommendation of PEP 8 regarding the Line Break Before or After a Binary Operator? 
+
+What is the recommendation of PEP 8 regarding blank lines in functions, classes, modules etc? 
+
+What is the recommendation of PEP 8 regarding default file type encoding (ascii, utf-8, etc)? 
+
+What is the recommendation of PEP 8 regarding Module Level Dunder Names (names which are starting and ending with __ ) ? 
+
+What is the recommendation of PEP 8 regarding String Quotes? 
+
+What is the recommendation of PEP 8 regarding Whitespace in Expressions and Statements? 
+
+What is the recommendation of PEP 8 regarding using Trailing Commas? 
+
+What is the recommendation of PEP 8 regarding Block Comments? 
+
+What is the recommendation of PEP 8 regarding Inline Comments? 
+
+What is the recommendation of PEP 8 regarding Documentation Strings? 
+
+What is the recommendation of PEP 8 regarding Naming Conventions? 
+
+What is the recommendation of PEP 8 regarding Function Annotations ? 
+
+What is the recommendation of PEP 8 regarding Variable Annotations ? 
+
+
+
+--------------------------------------
+
+# 1)Write a Python program to find the area of a rectangle. The length and width of the rectangle should be entered by the user.
+# 2)Write a Python program to find the factorial of a number using a loop.
+# 3)Write a Python program to calculate the average of a list of numbers.
+# 4)Write a Python program to check if a number is positive, negative, or zero.
+# 5)Write a Python program to check if a given string is a palindrome.
+# 6)Write a Python program to find the maximum and minimum values in a list.
+# 7)Write a Python program to sort a list of integers in ascending order.
+# 8)Write a Python program to check if a given number is a perfect square.
+
+---------------------
+
+Describe Naming Convension in Python 
+
+How to remove upto nth placed digits from the number, Say in 12345, we need to get 12000 after removing upto 3rd placed digits. 
+
+Which all are valid int 
+
+- 100 
+- 1000000 
+- 1e10 
+- 10_11_221 
+- 10_000_000 
+- 10_000_0.00 
+- 20/5 
+- int(20/5) 
+
+What is the output of the following 
+a = "data" 
+print(f">{a:^4.2}<") 
+
+What is the difference between a is b and a == b 
+
+If a == b is returning true then should the datatype of values which a and b have also be same. 
+
+How to check in a string that all characters are in lowercase 
+
+How to check is a substring is part of the string 
+
+Remove all the leading and trailing whitespace in a string 
+
+Create a banner of 40 characters with "Dhirendra Kumar" as data in the center and char * should be used to fill leading and trailing space. 
+
+How to find the sub-string (sub) count in each string (text) with overlapping occurrences, what that means is if you have a string as `mamamea` and substring is `mam` then count is 2. 
+
+How to check if multiple strings exist in a large string 
+
+-------------------------
