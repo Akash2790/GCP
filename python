@@ -36,6 +36,31 @@ What is the recommendation of PEP 8 regarding Function Annotations ?
 
 What is the recommendation of PEP 8 regarding Variable Annotations ? 
 
+-----------------------------------------
+
+
+PEP 8 is a style guide for writing Python code. Here are the answers to your questions regarding various aspects covered in PEP 8:
+
+PEP 8 provides guidelines for code layout, syntax, and naming conventions in Python.
+PEP 8 suggests using separate lines for importing different modules and organizing imports in a specific order (standard library modules, third-party modules, and local modules).
+PEP 8 recommends using 4 spaces for indentation.
+PEP 8 suggests using spaces for indentation and avoiding tabs.
+PEP 8 recommends limiting code lines to a maximum of 79 characters.
+PEP 8 encourages using comments or docstrings for long blocks of text with fewer structural restrictions.
+PEP 8 recommends breaking lines before binary operators for improved readability.
+PEP 8 suggests using blank lines to separate functions, classes, and modules for better code organization.
+PEP 8 recommends using UTF-8 as the default file type encoding.
+PEP 8 advises against using module level dunder names unless they have a specific purpose.
+PEP 8 recommends using single or double quotes for string literals, but being consistent within a project.
+PEP 8 suggests using whitespace to improve the readability of expressions and statements.
+PEP 8 recommends using trailing commas in function calls and definitions for improved version control diffs.
+PEP 8 suggests using block comments sparingly and only when necessary.
+PEP 8 recommends avoiding inline comments and preferring self-explanatory code.
+PEP 8 provides guidelines for writing documentation strings (docstrings) to describe the purpose and usage of functions, classes, and modules.
+PEP 8 provides naming conventions for variables, functions, classes, and modules (e.g., using lowercase with underscores for functions and variables).
+PEP 8 suggests using function annotations to specify types and return values in function signatures.
+PEP 8 suggests using variable annotations to specify types for variables when it enhances code clarity.
+Remember, these recommendations aim to promote consistency and readability in Python code.
 
 
 --------------------------------------
@@ -48,6 +73,83 @@ What is the recommendation of PEP 8 regarding Variable Annotations ?
 # 6)Write a Python program to find the maximum and minimum values in a list.
 # 7)Write a Python program to sort a list of integers in ascending order.
 # 8)Write a Python program to check if a given number is a perfect square.
+
+---------------------------------------
+
+Area of a Rectangle:
+
+length = float(input("Enter the length of the rectangle: "))
+width = float(input("Enter the width of the rectangle: "))
+
+area = length * width
+print("The area of the rectangle is:", area)
+Factorial of a Number using a Loop:
+
+number = int(input("Enter a number: "))
+factorial = 1
+
+if number < 0:
+    print("Factorial cannot be calculated for negative numbers.")
+elif number == 0:
+    print("The factorial of 0 is 1")
+else:
+    for i in range(1, number + 1):
+        factorial *= i
+    print("The factorial of", number, "is", factorial)
+Average of a List of Numbers:
+
+numbers = [float(num) for num in input("Enter a list of numbers, separated by spaces: ").split()]
+average = sum(numbers) / len(numbers)
+print("The average is:", average)
+Checking if a Number is Positive, Negative, or Zero:
+
+number = float(input("Enter a number: "))
+
+if number > 0:
+    print("The number is positive.")
+elif number < 0:
+    print("The number is negative.")
+else:
+    print("The number is zero.")
+Checking if a String is a Palindrome:
+
+string = input("Enter a string: ")
+reversed_string = string[::-1]
+
+if string == reversed_string:
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
+Finding the Maximum and Minimum Values in a List:
+
+numbers = [int(num) for num in input("Enter a list of numbers, separated by spaces: ").split()]
+maximum = max(numbers)
+minimum = min(numbers)
+
+print("Maximum value:", maximum)
+print("Minimum value:", minimum)
+Sorting a List of Integers in Ascending Order:
+
+numbers = [int(num) for num in input("Enter a list of numbers, separated by spaces: ").split()]
+sorted_numbers = sorted(numbers)
+
+print("Sorted list:", sorted_numbers)
+Checking if a Number is a Perfect Square:
+
+import math
+
+number = int(input("Enter a number: "))
+
+if number < 0:
+    print("A negative number cannot be a perfect square.")
+else:
+    square_root = math.isqrt(number)
+    if square_root * square_root == number:
+        print("The number is a perfect square.")
+    else:
+        print("The number is not a perfect square.")
+
+
 
 ---------------------
 
@@ -87,3 +189,94 @@ How to find the sub-string (sub) count in each string (text) with overlapping oc
 How to check if multiple strings exist in a large string 
 
 -------------------------
+
+
+
+Naming Convention in Python:
+The naming convention in Python follows these general guidelines:
+
+Variable, function, and module names should be in lowercase with words separated by underscores (snake_case).
+Constants should be in uppercase with words separated by underscores.
+Class names should use CamelCase (capitalize each word without underscores).
+Private variables and functions should start with a single underscore.
+Protected variables and functions should start with a double underscore.
+Global variables should be in lowercase with words separated by underscores, but it is generally recommended to avoid using global variables.
+Now, let's move on to your other questions:
+
+To remove digits up to the nth place in a number, you can use the floor division operator (//) to divide the number by 10 raised to the power of (total digits - n) and then multiply it back with 10 raised to the power of (total digits - n). Here's an example:
+
+number = 12345
+n = 3
+result = (number // (10 ** (len(str(number)) - n))) * (10 ** (len(str(number)) - n))
+print(result)  # Output: 12000
+Valid int values:
+100
+1000000
+1e10
+10_11_221
+10_000_000
+int(20/5)
+Output of print(f">{a:^4.2}<") is '>da<'. It uses f-string formatting and :^4.2 specifies that the string should be centered within a field of width 4, and only 2 characters should be displayed.
+
+The difference between a is b and a == b is that a is b checks if a and b refer to the same object in memory, while a == b checks if the values of a and b are equal. In other words, is checks identity, and == checks equality.
+
+Yes, if a == b returns true, it means that the values of a and b are the same. However, the datatype of a and b can be different. For example, a can be an integer and b can be a float, but if their values are the same, a == b will still return true.
+
+To check if all characters in a string are lowercase, you can use the islower() method. It returns true if all characters in the string are lowercase, and false otherwise.
+
+
+string = "hello"
+if string.islower():
+    print("All characters are lowercase.")
+else:
+    print("Not all characters are lowercase.")
+To check if a substring is part of a string, you can use the in keyword or the find() method. The in keyword returns true if the substring is found, and find() returns the index of the first occurrence of the substring (or -1 if not found).
+
+string = "Hello, World!"
+substring = "World"
+
+if substring in string:
+    print("Substring found.")
+else:
+    print("Substring not found.")
+
+# Using find() method
+if string.find(substring) != -1:
+    print("Substring found.")
+else:
+    print("Substring not found.")
+To remove leading and trailing whitespace from a string, you can use the strip() method.
+
+string = "   Hello, World!   "
+trimmed_string = string.strip()
+print(trimmed_string)  # Output: "Hello, World!"
+Creating a banner with a centered data using a specified character can be done using string formatting and the center() method.
+
+data = "Dhirendra Kumar"
+banner = data.center(40, "*")
+print(banner)  # Output: "*********Dhirendra Kumar*********"
+To find the count of overlapping occurrences of a substring in a string, you can use the count() method with a loop.
+
+string = "mamamea"
+substring = "mam"
+count = 0
+start = 0
+while True:
+    index = string.find(substring, start)
+    if index == -1:
+        break
+    count += 1
+    start = index + 1
+
+print(count)  # Output: 2
+To check if multiple strings exist in a large string, you can iterate over the strings and use the in keyword to check if each string is present.
+
+large_string = "This is a large string containing multiple words."
+search_strings = ["large", "multiple", "hello"]
+
+for search_string in search_strings:
+    if search_string in large_string:
+        print(f"'{search_string}' is present.")
+    else:
+        print(f"'{search_string}' is not present.")
+I hope these explanations and examples help! Let me know if you have any more questions.
